@@ -27,6 +27,6 @@ JavaScript
 
 Email: mitanuragpal@gmail.com
 
-LinkedIn: https://www.linkedin.com/anuragpal45
+LinkedIn: https://www.linkedin.com/in/anuragpal45/?originalSubdomain=in
 
-GitHub: itsanuragpal
+GitHub: https://github.com/ItsAnuragPal/
