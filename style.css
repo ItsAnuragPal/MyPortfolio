@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-family: 'BeVietnamPro', Arial, sans-serif;
+
+}
+
+
+a {
+    text-decoration: none;
+
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+
+
+}
+
+.logo {
+    height: 3.1rem;
+    width: 2.7rem;
+
+}
+
+
+.logo-text {
+    font-size: 2.375rem;
+    font-weight: bold;
+    background: linear-gradient(to bottom, red, rgb(110, 148, 148));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.logo-container {
+    display: flex;
+
+
+}
+
+.nav-items {
+    padding: 0 4rem;
+    display: flex;
+    gap: 2.1rem;
+
+}
+
+.nav-items div {
+    font-style: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-items a {
+    color: rgb(54, 53, 53);
+}
+
+.nav-items div:hover {
+    transition: 0.8s;
+    font-weight: bold;
+}
+
+.hero-section {
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faded-text {
+    user-select: none;
+    font-size: 7em;
+    color: rgb(231, 231, 231);
+    bottom: -16%;
+    left: -5%;
+    font-weight: bold;
+    transition: all 3s;
+
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+
+}
+
+.hero-heading,
+.hero-subheading {
+    font-size: 2.1875rem;
+    color: #343d68;
+    font-weight: 500;
+    line-height: 2.285rem;
+}
+
+.role {
+    color: #4e45d5;
+    font-weight: 600;
+
+}
+
+.hero-desc {
+    color: rgb(54, 53, 53);
+    width: 70%;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.button {
+    height: auto;
+    width: 10rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.7rem;
+    background-color: #1a1668;
+    border-radius: 0.45rem;
+    box-shadow: 1px 2px 2px 1px gray;
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: "";
+    background-color: #ed900e;
+    position: absolute;
+    border-radius: 0.45rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all 1s;
+    z-index: -1;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.hero-right {
+    position: relative;
+
+}
+
+.absolute {
+    position: absolute;
+}
+
+.user-img {
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s ease-in-out infinite;
+}
+
+.user-img img {
+    height: 18rem !important;
+    width: 14rem !important;
+    z-index: -9;
+}
+
+@keyframes scaleImage {
+    0% {
+        filter: grayscale(0);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 3px 3px 10px black;
+
+        transform: scale(1.1);
+        filter: grayscale(1);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+}
+
+.hero-right img {
+    height: 4rem;
+    width: 4.5rem;
+}
+
+.icon-dots {
+    z-index: 9;
+    bottom: -1rem;
+    right: 0;
+    animation: dotsAnimation 5s infinite;
+}
+
+@keyframes dotsAnimation {
+    0% {
+        transform: translateY(0px);
+
+    }
+
+    50% {
+        transform: translateY(-15px);
+
+    }
+
+    100% {
+        transform: translateY(0px);
+
+    }
+}
+
+.icon-cube {
+    z-index: 9;
+    top: -0.8em;
+    right: 1em;
+    animation: cubeRotate 5.3s infinite;
+}
+
+@keyframes cubeRotate {
+    0% {
+        transform: rotateY(0deg) translateY(0px);
+
+    }
+
+    50% {
+        transform: rotateY(180deg) translateY(-12px);
+
+
+    }
+
+    100% {
+        transform: rotateY(360deg) translateY(0px);
+
+
+    }
+}
+
+.icon-circle {
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    animation: shakeEffect 5s linear infinite;
+
+}
+
+.icon-circle img {
+    height: 2rem;
+    width: 2rem;
+}
+
+@keyframes shakeEffect {
+
+    50% {
+        left: 5%;
+        bottom: 4%;
+    }
+
+}
+
+.icon-zigzag{
+z-index: 9;
+top: 1.5em;
+left: -0.3em;
+animation: zigZagAnimation 5s ease-in infinite;
+}
+
+@keyframes zigZagAnimation {
+    50%{
+left: 5%;
+top: 2%;
+    }
+}
+
+.icon-plus{
+z-index: 9;
+top: -0.8rem;
+left: 50%;
+animation: shakeEffectPlus 5s ease-in infinite;
+
+}
+
+@keyframes shakeEffectPlus {
+    50%{
+top: 3%;
+left: 48%;
+
+    }
+}
