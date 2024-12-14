@@ -1,7 +1,7 @@
 # MyPortfolio
 Welcome to my personal portfolio website! This is a showcase of my skills, projects, and experiences as an aspiring software engineer. The website includes details about my ongoing and completed projects, along with my contact information for collaboration opportunities.
 
-Features
+# Features
 
     1. Introduction Section: A brief about myself, my background, and my aspirations as a software engineer.
 
@@ -13,7 +13,7 @@ Features
 
     5. Responsive Design: The website is mobile-friendly and adapts to various screen sizes.
 
-Technologies Used
+# Technologies Used
 
 HTML
 
@@ -23,7 +23,7 @@ JavaScript
 
 
 
-Contact
+# Contact Mee
 
 Email: mitanuragpal@gmail.com
 
