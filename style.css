@@ -120,7 +120,7 @@ a {
 
 .button {
     height: auto;
-    width: 10rem;
+    width: 8rem;
     text-align: center;
     color: #fff;
     font-size: 1.1rem;
@@ -145,6 +145,12 @@ a {
     transition: all 1s;
     z-index: -1;
 }
+
+.btn-grp .button {
+    width: 10rem !important;
+    height: 3rem !important;
+}
+
 
 .button:hover::before {
     transform: scaleX(1);
@@ -457,77 +463,207 @@ button {
     gap: 2rem;
 }
 
-.skill-left-container{
-width: 50%;
-display: flex;
-flex-direction: column;
+.skill-left-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.skill-right-container{
-display: flex;
-flex-wrap: wrap;
-width: 50%;
-height: 90%;
-position: relative;
-gap: 2rem;
+.skill-right-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 90%;
+    position: relative;
+    gap: 2rem;
 }
 
-.faded-skill{
-bottom: -34.5%;
-left: 84%;
-user-select: none;
-position: absolute;
+.faded-skill {
+    bottom: -14% !important;
+    left: 84%;
+    user-select: none;
+    position: absolute;
 }
 
-.blob{
-position: absolute;
-width: 200px;
-top: 50%; 
-left: 50%;
-transform: translate(-50%,-50%);
-animation: shakeBlob 4s linear infinite;
-z-index: -1;
-opacity: 0.5;
+.blob {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: shakeBlob 4s linear infinite;
+    z-index: -1;
+    opacity: 0.5;
 }
 
 @keyframes shakeBlob {
-    50%{
-top: 54%;
-left: 46%;
+    50% {
+        top: 54%;
+        left: 46%;
     }
 }
 
-.skill-logo{
-width: 80px ;
-transition: all 0.5s;
+.skill-logo {
+    width: 80px;
+    transition: all 0.5s;
 
 }
 
-.skill-logo:hover{
-transform: scale(1.1);
+.skill-logo:hover {
+    transform: scale(1.1);
 
 }
 
-.skill-heading{
-font-size: 3rem;
-font-weight: bold;
-color: orangered;
+.skill-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: orangered;
 }
 
-.caps{
-font-size: 5.5rem;
+.caps {
+    font-size: 5.5rem;
 
 }
 
-.skill-desc{
-margin-top: 1rem;
-width: 85%;
-text-align: justify;
+.skill-desc {
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
 }
 
-.skill-desc p{
+.skill-desc p {
     color: rgb(54, 53, 53);
     margin: 1rem 0;
     line-height: 1.5rem;
+}
+
+
+.contact-container {
+    margin-top: 3.75rem;
+    width: 100%;
+    /* background-image: url(./Images/pexels-negativespace-169573.jpg); */
+    background-color: rgb(231, 231, 231);
+}
+
+.contact-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: orangered;
+    padding-top: 1.5rem;
+}
+
+.contact-desc {
+    font-size: 2rem;
+    color: #262f5baa;
+    text-transform: capitalize;
+}
+
+.contact-info {
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 0;
+    background-color: rgb(234, 235, 236);
+}
+
+.right-contact {
+    margin-left: 7rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right-contact .heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343d68;
+}
+
+.contact div,
+.contact a {
+    font-size: 1.2rem;
+    color: #261810aa;
+}
+
+a i{
+    font-size: 2rem;
+    color: #1a1668;
+height: 5.5rem;
+width: 2.5rem;
+}
+
+a i:hover{
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form-container {
+    margin-top: 1.5rem;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.input-container input {
+    width: 150%;
+    height: 2.5rem;
+    padding: 0 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.45rem;
+    box-shadow: 2px 2px 2px 1px rgb(43, 42, 42);
+    border: none;
+}
+
+.input-container textarea {
+    margin-left: 3.9rem;
+    width: 105%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 0.45rem;
+    box-shadow: 2px 2px 2px 1px rgb(43, 42, 42);
+    border: none;
+}
+
+
+.input-container .button {
+    width: 13rem;
+    position: relative;
+}
+
+.input-container button img {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
 }
