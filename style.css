@@ -593,39 +593,11 @@ height: 5.5rem;
 width: 2.5rem;
 }
 
-a i:hover{
+.social-icons i:hover{
   transform: scale3d(1.1, 1.1, 1.1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact-form-container {
     margin-top: 1.5rem;
-
 }
 
 .form-container {
@@ -666,4 +638,55 @@ a i:hover{
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
+}
+.footer-container{
+    position: relative;
+margin-top: -1px;
+padding: 5rem;
+background-color: #343d68;
+
+}
+.footer-faded{
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 17%;
+    left: 2%;
+    user-select: none;
+    color: #414c85;
+}
+
+
+
+.footer-wrapper{
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link-wrapper{
+    display: flex;
+    gap: 1.2rem;
+}
+.link-wrapper a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 550;
+    
+}
+
+.link-wrapper a:hover{
+    color: #1a1668;
+    text-shadow: 2px 5px 6px rgb(35, 41, 81);
+transform: scale(1.1);
+}
+
+.footer-social-icons {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    color: #fff;
 }
